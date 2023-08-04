@@ -5,6 +5,7 @@ package com.crud.SoftwareEngineeringChallenge.dto;
 //imported
 import lombok.Data;
 
+@Data
 public class ItemDto {
 
     private Long id;
