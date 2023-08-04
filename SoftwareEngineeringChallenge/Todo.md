@@ -67,13 +67,17 @@ swagger:
 
 <http://localhost:8080/swagger-ui/index.html>
 
+h2 databse:
+
+<http://localhost:8080/h2-console/>
+
+url=jdbc:h2:mem:crud
 
 ### Create(HTTP POST):
 
 - Endpoint: `/items`
 - Description: Allows the user to create a new item by providing the `name` and `description` in the request body.
 - Response: Returns the created item with its unique `id`.
-
 
 ---
 
@@ -88,6 +92,7 @@ sent
   "description": "happy trees"
 }
 ```
+
 Response: 200
 
 ---
