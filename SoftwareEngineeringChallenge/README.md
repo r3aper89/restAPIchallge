@@ -62,5 +62,3 @@ Your submission will be evaluated based on the following criteria:
 - Documentation: Is the documentation clear, detailing the endpoints, request/response formats, and any other relevant information?
 - Overall Design: Does the RestAPI demonstrate good software design principles?
 
-
-#
