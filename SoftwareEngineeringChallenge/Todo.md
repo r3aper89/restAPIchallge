@@ -1,5 +1,7 @@
-# setup project
 
+---
+# setup project
+---
 ## task 0
 - [x] setup git project
 
@@ -20,9 +22,9 @@ dependencies:
     spring boot devtools
     swagger
 
-# task 1
+## task 2
 
-setup project structure
+- [x] setup project structure
 
 adapter/
 - ItemAdapter.java
@@ -60,7 +62,7 @@ resources
 ---
 
 # testing endpoints
-
+---
 
 ## testing
 swagger:
@@ -73,17 +75,18 @@ h2 databse:
 
 url=jdbc:h2:mem:crud
 
+---
+
 ### Create(HTTP POST):
 
 - Endpoint: `/items`
 - Description: Allows the user to create a new item by providing the `name` and `description` in the request body.
 - Response: Returns the created item with its unique `id`.
 
----
+
 
 - [x] takes all vales
 
----
 sent
 ```json
 {
@@ -95,12 +98,11 @@ sent
 
 Response: 200
 
----
+
 
 - [x] takes `name` and `description`
 - [x] creates unique `id`.
 
----
 sent
 ```json
 {
@@ -117,7 +119,7 @@ receved
     "description": "can you hear what i mean"
 }
 ```
----
+
 
 - [x] missing `name` fild
 
@@ -137,11 +139,8 @@ Response: 200
   "path": "/items"
 }
 ```
----
 
 - [x] missing `description` fild
-
----
 
 ```json
 {
@@ -178,7 +177,7 @@ SQL table
 | 2   | honks       | hippo |
 | 3   | meows       | cat   |
 
----
+
 
 - [x] Returns the item's details (including `name`, `description`, and `id`)
 
@@ -193,11 +192,11 @@ http://localhost:8080/items/1
 ```
 response 200
 
----
+
 
 - [x] Returns an appropriate error message if item not found.
 
----
+
 
 ```json
 {
